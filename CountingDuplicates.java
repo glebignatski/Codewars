@@ -21,17 +21,12 @@ public class CountingDuplicates {
           }
         }
       }
-      // "aabBcdde"
-      // arr[0] = 2
-      // "0abBcdde"
-      // arr[1] = 
       int mult = 0;
       for(int i = 0; i < num_chars.length; i++){
         if(num_chars[i] == 1 ){
           mult++;
         }
-      }
-      
+      }      
       return mult;
     }
 }
