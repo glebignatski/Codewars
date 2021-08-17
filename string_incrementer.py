@@ -7,7 +7,7 @@ def increment_string(strng):
         return "1"
     check = False # This variable indicates whether all valid numbers have been added
     for i in range(len(strng)-1, -1, -1): # Append from the right side to avoid inapplicable digits
-        if (ord(strng[i]) >= 48 and ord(strng[i]) <= 57) and check == False:
+        if (ord(strng[i]) >= 48 and ord(strng[i]) <= 57 and check == False):
             num+= str(ord(strng[i])-48)
         else:
             check = True
