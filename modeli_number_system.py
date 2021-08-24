@@ -25,21 +25,16 @@ def from_nb_2_str(n, modsys):
         xarr = xarr + str(n%modsys[i]) + "--"
     return xarr + str(n%modsys[ln-1]) + "-"
 
-test1 = from_nb_2_str(779, [8,7,5,3])
-test2 = from_nb_2_str(15, [8,6,5,3])
-test3 = from_nb_2_str(3450, [17,5,3])
-test4 = from_nb_2_str(3450, [13,11,7,5,3,2])
-
-if (test1 == "-3--2--4--2-"):
+# Testing
+if (from_nb_2_str(779, [8,7,5,3]) == "-3--2--4--2-"):
 	print("Passed Test 1")
-if (test2 == "Not applicable"):
+if (from_nb_2_str(15, [8,6,5,3]) == "Not applicable"):
 	print("Passed Test 2")
-if (test3 == "Not applicable"):
+if (from_nb_2_str(3450, [17,5,3]) == "Not applicable"):
 	print("Passed Test 3")
-if (test4 == "-5--7--6--0--0--0-"):
+if (from_nb_2_str(3450, [13,11,7,5,3,2]) == "-5--7--6--0--0--0-"):
 	print("Passed Test 4")
 
-# -------------------Other Testing-------------------
 # from datetime import datetime
 
 # arr = [i for i in range(1, 10)]
