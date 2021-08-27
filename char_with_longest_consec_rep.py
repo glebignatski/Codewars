@@ -6,7 +6,7 @@ def longest_repetition(chars):
     # e.g., "aaabb" becomes "aaa bb", which I could then split to see which consecutive sequence is the largest
     for i in range(len(chars)-1):
         if (chars[i] == chars[i+1]):
-            s+= chars[i]
+            s+=chars[i]
         else:
             s+=chars[i] + " "
             
