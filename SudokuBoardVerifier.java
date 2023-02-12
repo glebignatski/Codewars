@@ -1,3 +1,5 @@
+package test4;
+
 public class SudokuBoardVerifier {
 
 	public static void main(String[] args) {
